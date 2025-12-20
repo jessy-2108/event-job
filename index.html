@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT JOB - บริการจัดงานครบวงจร</title>
+    <style>
+        /* ตั้งค่าพื้นฐานแบบเสถียร */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Tahoma', 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ส่วนหัวข้อ */
+        header {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .brand-name {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: 5px;
+        }
+
+        /* ส่วนเนื้อหา */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            border-bottom: 3px solid #6366f1;
+            display: table;
+            margin: 0 auto 40px;
+            padding-bottom: 10px;
+        }
+
+        /* รายการบริการ */
+        .service-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .service-card {
+            background: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .service-card h3 {
+            color: #4f46e5;
+            margin: 15px 0 10px;
+        }
+
+        /* รีวิว */
+        .review-section {
+            background: #eef2ff;
+            padding: 40px 20px;
+            margin: 40px 0;
+            border-radius: 20px;
+        }
+
+        .review-box {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #a855f7;
+        }
+
+        /* ส่วนติดต่อ */
+        .contact-area {
+            text-align: center;
+            padding: 40px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .btn-line {
+            display: inline-block;
+            background: #06C755;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .btn-phone {
+            display: inline-block;
+            background: #6366f1;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="brand-name">EVENT JOB</h1>
+    <p>ศูนย์รวมบริการจัดงานพิธีและอุปกรณ์จัดงานครบวงจร</p>
+</header>
+
+<div class="container">
+    
+    <h2>บริการของเรา</h2>
+    <div class="service-grid">
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=400" alt="โต๊ะจีน">
+            <h3>รับจัดหาโต๊ะจีน</h3>
+            <p>อาหารรสเลิศ คุณภาพพรีเมียม</p>
+        </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=400" alt="ดอกไม้">
+            <h3>จัดดอกไม้สด/แห้ง</h3>
+            <p>งานประดับสวยงามทุกรูปแบบ</p>
+        </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1627894483216-2138af692e32?w=400" alt="ทำบุญ">
+            <h3>รับทำบุญครบวงจร</h3>
+            <p>นิมนต์พระ อุปกรณ์สงฆ์ครบชุด</p>
+        </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1562033288-ae302253b26c?w=400" alt="บวงสรวง">
+            <h3>พิธีบวงสรวง</h3>
+            <p>เครื่องบวงสรวงและพราหมณ์พิธี</p>
+        </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1616428787720-69274384917f?w=400" alt="ตั้งศาล">
+            <h3>ตั้งและถอนศาล</h3>
+            <p>บริการถูกต้องตามหลักพิธีกรรม</p>
+        </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400" alt="รถสุขา">
+            <h3>รถสุขาเคลื่อนที่ VIP</h3>
+            <p>สะอาด หรูหรา มีระดับ</p>
+        </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400" alt="เครื่องปั่นไฟ">
+            <h3>เครื่องปั่นไฟ</h3>
+            <p>ไฟนิ่ง แรงสูง รองรับทุกงาน</p>
+        </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400" alt="วงดนตรี">
+            <h3>เวทีและวงดนตรี</h3>
+            <p>ระบบแสง สี เสียง ครบชุด</p>
+        </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400" alt="บุฟเฟ่ต์">
+            <h3>อาหารบุฟเฟ่ต์</h3>
+            <p>หลากหลายเมนู วัตถุดิบสดใหม่</p>
+        </div>
+    </div>
+
+    <div class="review-section">
+        <h2>รีวิวจากลูกค้า</h2>
+        <div class="review-box">
+            <strong>คุณวิรัช:</strong> "งานบวงสรวงจัดได้ดีมากครับ ครบถ้วนตามประเพณี แนะนำ EVENT JOB ครับ"
+        </div>
+        <div class="review-box">
+            <strong>คุณสมชาย:</strong> "รถสุขา VIP สะอาดมาก แขกในงานชมทุกคน ทีมงานดูแลดีครับ"
+        </div>
+        <div class="review-box">
+            <strong>คุณแพรวา:</strong> "โต๊ะจีนอร่อยมาก วงดนตรีเล่นสนุก งานเลี้ยงประทับใจสุดๆ ค่ะ"
+        </div>
+    </div>
+
+    <div class="contact-area">
+        <h2>ติดต่อสอบถาม 24 ชม.</h2>
+        <p>ยินดีให้คำปรึกษาและประเมินราคาฟรี</p>
+        <a href="https://line.me/ti/p/~0636433390" class="btn-line">LINE ID: 0636433390</a>
+        <br>
+        <a href="tel:0935719091" class="btn-phone">📞 โทร: 093-571-9091</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 EVENT JOB Studio. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
